@@ -1,0 +1,60 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  padding: 20px;
+  background-color: black;
+}
+
+.Link {
+  text-decoration: none;
+  color: white;
+}
+.Link:hover {
+  color: #EE4c7c;
+
+  transition: all 0.5s ease-out;
+}
+
+.page {
+  background-color: rgb(242, 174, 242);
+
+  padding-top: 20px;
+  font-size: 20px;
+  min-height: 498px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table {
+  width: 95.6vw;
+ margin-left: auto;
+ margin-right:auto;
+}
+h3{
+  padding-left: 50px;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button
+{
+  width: 150px;
+  height: 30px;
+  border-radius:10px ;
+  font-size: 15px;
+  font-weight: bold;
+  cursor:pointer;
+}

@@ -1,0 +1,74 @@
+import React, { useState } from "react";
+import { Link } from 'react-router-dom'
+import '../App.css'
+const Student = () => {
+    const [data, setData] = useState([
+        {
+            Name: "John",
+            Age: 24,
+            Course: "October",
+            Batch: "March",
+            Change: "Edit"
+        },
+        {
+            Name: "Doe",
+            Age: 25,
+            Course: "MERN",
+            Batch: "November",
+            Change: "Edit"
+        },
+        {
+            Name: "Biden",
+            Age: 26,
+            Course: "MERN",
+            Batch: "September",
+            Change: "Edit"
+        },
+        {
+            Name: "Barar",
+            Age: 22,
+            Course: "MERN",
+            Batch: "September",
+            Change: "Edit"
+        },
+        {
+            Name: "Christ",
+            Age: 23,
+            Course: "MERN",
+            Batch: "October",
+            Change: "Edit"
+        },
+    ])
+    return (
+        <div className="background">
+            <div className="flex">
+            <h3>Student Details</h3>
+            <button>Add New Student</button>
+            </div>
+            <table border={1}>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                    <th>Batch</th>
+                    <th>Change:</th>
+                </tr>
+                {data.map((item,index)=>{
+                    return(
+                        <tr key={index}>
+                            <td>{item.Name}</td>
+                            <td>{item.Age}</td>
+                            <td>{item.Course}</td>
+                            <td>{item.Batch}</td>
+                            <td> <Link to='#'>{item.Change}</Link></td>
+
+                        </tr>
+                    )
+                })}
+            </table>
+
+
+        </div>
+    )
+}
+export default Student
